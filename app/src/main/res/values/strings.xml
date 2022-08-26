@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CovidCareApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="covid_trends">Covid Trends</string>
+    <string name="activity_maps">MapsActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
