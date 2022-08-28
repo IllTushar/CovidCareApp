@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorConsults">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+<LinearLayout
+    android:id="@+id/linear_layout1"
+    android:layout_width="match_parent"
+    android:layout_height="370dp"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/doctor"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Doctors Consultant"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        />
+    </LinearLayout>
+
+</LinearLayout>
+        <TextView
+            android:fontFamily="sans-serif-condensed"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:textSize="15sp"
+            android:text="A doctor appointment app is a software application that is especially meant to help patients manage and schedul appointments with the doctors or plan a video call."
+
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/rectangelshape"
+            />
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edit_text"
+            />
+    </LinearLayout>
+        <Button
+            android:id="@+id/doctorconsult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btngradient"
+            android:text="Next"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingRight="5dp"
+            android:drawableRight="@drawable/ic_baseline_arrow_forward_24"
+            android:layout_margin="40dp"/>
+    </LinearLayout>
+</RelativeLayout>

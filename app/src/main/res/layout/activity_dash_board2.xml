@@ -462,17 +462,15 @@
         </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/btnHospital"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/btngradient"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/btnHospital"
-        android:drawableLeft="@drawable/ic_baseline_add_location_24"
         android:layout_marginBottom="10dp"
-        android:text="Find Nearest Hospitals"
-        android:textColor="@color/white"
-        />
+        android:background="@drawable/btngradient"
+        android:text="Find Near Me Doctors"
+        android:textColor="@color/white" />
 </RelativeLayout>
