@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -58,11 +59,17 @@ public class SelectedDoctors extends AppCompatActivity {
         join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
-                        .setRoom(id.getText().toString())
-                        .setWelcomePageEnabled(false)
-                        .build();
-                JitsiMeetActivity.launch(SelectedDoctors.this,options);
+                String ID =id.getText().toString();
+                if (ID.isEmpty()){
+                    Toast.makeText(getApplicationContext(), "Enter ID", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    JitsiMeetConferenceOptions options = new JitsiMeetConferenceOptions.Builder()
+                            .setRoom(id.getText().toString())
+                            .setWelcomePageEnabled(false)
+                            .build();
+                    JitsiMeetActivity.launch(SelectedDoctors.this,options);
+                }
             }
         });
         btnlocation.setOnClickListener(new View.OnClickListener() {
