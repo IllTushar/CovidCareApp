@@ -268,7 +268,7 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/tvActive"
+                                android:id="@+id/activecases"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
@@ -303,12 +303,12 @@
                                 android:textSize="18sp" />
 
                             <TextView
-                                android:id="@+id/tvTodayCases"
+                                android:id="@+id/todaycases"
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="0"
+                                android:text="53419"
                                 android:textAlignment="textEnd"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />
@@ -413,7 +413,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="0"
+                                android:text="91"
                                 android:textAlignment="textEnd"
                                 android:textSize="18sp"
                                 android:textStyle="bold" />

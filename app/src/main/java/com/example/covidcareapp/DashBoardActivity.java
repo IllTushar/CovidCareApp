@@ -32,12 +32,12 @@ public class DashBoardActivity extends AppCompatActivity {
         tvCases = findViewById(R.id.tvCases);
         tvCritical = findViewById(R.id.tvCritical);
         tvRecovered = findViewById(R.id.tvRecovered);
-        tvActiveCases = findViewById(R.id.tvActive);
+        tvActiveCases = findViewById(R.id.activecases);
         tvTotalDeaths = findViewById(R.id.tvTotalDeaths);
         tvTodayDeaths = findViewById(R.id.tvTodayDeaths);
         tvTotalCases = findViewById(R.id.tvTotalCase);
         tvAffectedCountries = findViewById(R.id.tvAffectedCountries);
-        tvTodayCases = findViewById(R.id.tvTodayCases);
+        tvTodayCases = findViewById(R.id.todaycases);
         btnNearestHospital = findViewById(R.id.btnHospital);
         btnNearestHospital.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,9 +62,10 @@ public class DashBoardActivity extends AppCompatActivity {
                     tvRecovered.setText(jsonObject.getString("recovered"));
                     tvActiveCases.setText(jsonObject.getString("active"));
                     tvTotalDeaths.setText(jsonObject.getString("deaths"));
-                    tvTodayDeaths.setText(jsonObject.getString("todayDeaths"));
+
+                    //tvTodayDeaths.setText(jsonObject.getString("todayDeaths"));
                     tvAffectedCountries.setText(jsonObject.getString("affectedCountries"));
-                    tvTodayCases.setText(jsonObject.getString("todayCases"));
+                    //tvTodayCases.setText(jsonObject.getString("todayCases"));
 
                     pieChart.addPieSlice(new PieModel("Cases",Integer.parseInt(tvCases.getText().toString()), Color.parseColor("#F87147")));
                     pieChart.addPieSlice(new PieModel("Active",Integer.parseInt(tvActiveCases.getText().toString()), Color.parseColor("#2196F3")));
